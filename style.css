@@ -1,0 +1,112 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #171d29;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lexend Deca', sans-serif;
+  color: #f3f4f6;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: #6b7280;
+}
+
+nav {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: #020617;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 6rem;
+}
+
+nav .nav-container .logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+}
+
+nav .nav-container span {
+  color: #eab308;
+}
+
+nav .nav-container .time-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav .nav-container .time-date p {
+  color: #d3d3d3;
+  font-size: 1.2rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav .nav-container .time-date .currentDay {
+  background-color: #aeaeae;
+  padding: 3px 1.5rem;
+  border-radius: 5px;
+  color: #020617;
+  font-weight: bold;
+}
+
+.document-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60%;
+  /* background-color: white; */
+  display: flex;
+  gap: 50px;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.left-content .title {
+  font-size: 5rem;
+  color: #f3f4f6;
+  line-height: 3.3rem;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  /* padding-left: 1.2rem; */
+  font-family: 'Dancing Script', cursive;
+}
+
+.left-content .title span {
+  color: #eab308;
+  font-style: italic;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}

@@ -1,0 +1,47 @@
+===> TASK <=== 
+
+Create and host a simple single-page website outlining your goals for the next 2 years in the tech field.
+
+The website should be visually appealing, and mobile-friendly
+Each required element should have a specified data-tested attribute for easy identification and testing
+
+
+
+
+===> REQUIREMENT <=== 
+
+1. Languages: HTML, CSS, and JavaScript
+
+2. Responsiveness: responsive on desktop, tablet, and mobile
+
+3. Images: all images used on the website must have natural dimensions (width and height specified in the image file itself). Websites with images that don't have natural dimensions will be automatically disqualified.
+
+4. Required Elements: Each required element on the website (slack name, slack profile picture, links) should have a data-test-id attribute assigned for easy testing purposes.
+	1. Slack Name: Display your slack display name (attribute: 	data-	test-id="slackDisplayName")
+	2. Current Time in UTC: Display the current time in UTC (data-	testid="currentTimeUTC")
+	3. Current Day of the week, e.g. Monday. (data-	testid="currentDay")
+	4. Slack Email (data-tested="slackEmail")
+	5. Slack profile picture (data-testid="slackProfilePicture"): 	dimension: natural dimensions and added to the page in its 	original size (natural width and natural height)
+	6. Add a link to hng.tech/learn (data-testid="hngLink")
+	7. Add a link to keyword.dog (data-testid="keywordLink")
+	8. Add a link to scrapeanyweb.site (data-	testid="scrapeanywebLink")
+
+
+
+===> ACCEPTANCE CRITERIA <=== 
+
+1. Content: the website should clearly outline your tech goals for the next 2 years.
+2. Visuals: The website should be visually appealing and well-organized.
+3. Functionality: All links should function properly and direct users to the specified websites.
+4. Responsiveness: The website should be fully responsive and adjust to different screen sizes
+5. Code quality: The code should be well-structured, indented, and easy to read.
+6. Each required element should have a unique data-testid attribute assigned.
+7. Accuracy: Your slack name should correspond to the actual data.
+8. Your slack profile picture dimension must be in its original size (make sure the image have natural dimensions).
+
+
+
+
+===> SUBMISSION MODE <===
+
+Ensure you've hosted the website, double check all requirements and acceptance criteria, thoroughly review your work to ensure accuracy, functionality, adherence to the specified guidelines, provide the deployed link in the submission form, and submit.

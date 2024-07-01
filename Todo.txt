@@ -1,0 +1,9 @@
+==========> TODO <===============
+
+Screen sizes:
+1. Mobile: 320 - 420px
+2. Tablet: 
+3. Desktop: 
+
+color: #57678d, dark-blue:#111827, yellow:#EAB308, ash:#6B7280, white:#F3F4F6, very-dark-blue:#020617
+
