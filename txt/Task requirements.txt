@@ -17,7 +17,7 @@ Each required element should have a specified data-tested attribute for easy ide
 3. Images: all images used on the website must have natural dimensions (width and height specified in the image file itself). Websites with images that don't have natural dimensions will be automatically disqualified.
 
 4. Required Elements: Each required element on the website (slack name, slack profile picture, links) should have a data-test-id attribute assigned for easy testing purposes.
-	1. Slack Name: Display your slack display name (attribute: 	data-	test-id="slackDisplayName")
+	1. Slack Name: Display your slack display name (attribute: 	data-test-id="slackDisplayName")
 	2. Current Time in UTC: Display the current time in UTC (data-	testid="currentTimeUTC")
 	3. Current Day of the week, e.g. Monday. (data-	testid="currentDay")
 	4. Slack Email (data-tested="slackEmail")

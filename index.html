@@ -14,9 +14,11 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <nav class="navigation">
+    <nav>
       <div class="nav-container">
-        <h1 class="logo">enesi<span>_dev</span></h1>
+        <h1 class="logo" data-testid="slackDisplayName">
+          enesi<span>_dev</span>
+        </h1>
         <aside class="time-date">
           <p class="currentTimeUTC" data-testid="currentTimeUTC"></p>
           <p class="currentDay" data-testid="currentDay"></p>
@@ -28,39 +30,72 @@
       <div class="container">
         <aside class="left-content">
           <h1 class="title">
-            My two year
+            My two year <br />
             <span class="goal">goals</span>
           </h1>
-          <div>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate fuga possimus saepe, aperiam sequi cupiditate vero
-              exercitationem perferendis reprehenderit id sit eveniet
-              repudiandae ab aliquam nam ullam dolorum quidem, nostrum commodi
-              omnis a? A quidem omnis voluptate magnam molestiae ratione?
-            </p>
-          </div>
+          <ul class="goal-lists">
+            <li>
+              <span>&xrArr;</span> Master frontend technologies such as NextJS
+            </li>
+            <li>
+              <span>&xrArr;</span> Become a technical writer writing mainly
+              about frontend and it's technologies
+            </li>
+            <li><span>&xrArr;</span> Contribute to open source projects</li>
+            <li>
+              <span>&xrArr;</span> Become a developer advocate and speak in tech
+              events
+            </li>
+            <li>
+              <span>&xrArr;</span> Land a full time frontend developer job
+            </li>
+            <li>
+              <span>&xrArr;</span> Mentor newbies in the frontend development
+              space
+            </li>
+            <li>
+              <span>&xrArr;</span> Improve my soft skills such as problem
+              solving, communication, teamwork, etc.
+            </li>
+          </ul>
         </aside>
 
         <aside class="right-content">
-          <div>
+          <div class="image-div">
             <img
-              src="images/slack-dp1.jpeg"
-              width="300px"
-              height="250px"
+              src="images/slack-img.jpeg"
               alt="My Slack Profile Picture"
+              data-testid="slackProfilePicture"
             />
           </div>
           <div>
-            <h2 class="displayName">enesi_dev</h2>
-            <h3 class="myEmail">abdulazeezm578@gmail.com</h3>
+            <section class="name-title">
+              <h2 class="displayName" data-testid="slackDisplayName">
+                enesi_dev
+              </h2>
+              <p>(Frontend Developer)</p>
+            </section>
+            <p class="myEmail" data-testid="slackEmail">
+              abdulazeezm578@gmail.com
+            </p>
             <article class="links">
-              <a href="https://www.hng.tech/learn" target="_blank">HNG learn</a>
-              <a href="https://www.keyword.dog" target="_blank"
+              <a
+                href="https://www.hng.tech/learn"
+                target="_blank"
+                data-testid="hngLink"
+                >HNG learn</a
+              >
+              <a
+                href="https://www.keyword.dog"
+                target="_blank"
+                data-testid="keywordLink"
                 >Keyword website</a
               >
-              <a href="https://www.scrapeanyweb.site" target="_blank"
-                >scrapeanyweb website</a
+              <a
+                href="https://www.scrapeanyweb.site"
+                target="_blank"
+                data-testid="scrapeanywebLink"
+                >Scrapeanyweb</a
               >
             </article>
           </div>

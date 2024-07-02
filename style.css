@@ -20,13 +20,14 @@ h6 {
   color: #f3f4f6;
 }
 
-p {
+p,
+li {
   font-family: 'Lato', sans-serif;
   color: #6b7280;
 }
 
 nav {
-  height: 5rem;
+  height: 7.5rem;
   display: flex;
   align-items: center;
   background-color: #020617;
@@ -37,12 +38,12 @@ nav .nav-container {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 6rem;
+  padding: 0 1.5rem;
 }
 
 nav .nav-container .logo {
   font-family: 'Dancing Script', cursive;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
 
 nav .nav-container span {
@@ -51,9 +52,9 @@ nav .nav-container span {
 
 nav .nav-container .time-date {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
 }
 
 nav .nav-container .time-date p {
@@ -71,32 +72,30 @@ nav .nav-container .time-date .currentDay {
 }
 
 .document-body {
-  height: 100vh;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  width: 60%;
-  /* background-color: white; */
+  width: 90%;
   display: flex;
+  flex-direction: column;
   gap: 50px;
 }
 
 .left-content {
   display: flex;
   flex-direction: column;
-  width: 60%;
 }
 
 .left-content .title {
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: #f3f4f6;
   line-height: 3.3rem;
   margin-bottom: 4rem;
   margin-top: 3rem;
-  /* padding-left: 1.2rem; */
   font-family: 'Dancing Script', cursive;
 }
 
@@ -105,8 +104,207 @@ nav .nav-container .time-date .currentDay {
   font-style: italic;
 }
 
+.left-content .goal-lists {
+  list-style-type: none;
+  padding: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  background: #020617;
+  border-radius: 10px;
+}
+
+.left-content .goal-lists span {
+  color: #eab20880;
+  font-size: 1rem;
+  padding-right: 0.8rem;
+}
+
 .right-content {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 100%;
+}
+
+.right-content .name-title {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  width: inherit;
+}
+
+.right-content .name-title h2 {
+  font-size: 2.3rem;
+}
+
+.right-content .name-title p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #eab308;
+}
+
+.right-content .myEmail {
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.right-content .links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  font-size: 1.3rem;
+  gap: 1rem;
+  align-items: center;
+  width: inherit;
+  margin-top: 1rem;
+}
+
+.right-content .links a {
+  background: #eab20880;
+  text-decoration: none;
+  color: #f3f4f6;
+  /* border: 2px solid #eab20888; */
+  box-shadow: 8px 8px 18px 3px #0000008e;
+  font-family: 'Lato', sans-serif;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.right-content .links a:hover,
+.right-content .links:active {
+  box-shadow: 3px 3px 8px 1px #0000008e;
+}
+
+/* Media Queries */
+
+/* Increase font size for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    height: 5.5rem;
+  }
+
+  nav .nav-container {
+    padding: 0 2rem;
+  }
+
+  nav .nav-container .logo {
+    font-size: 2.5rem;
+  }
+
+  nav .nav-container .time-date {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .container {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .left-content {
+    width: 60%;
+  }
+
+  .left-content .title {
+    font-size: 5rem;
+  }
+
+  .left-content .goal-lists {
+    font-size: 1.6rem;
+  }
+
+  .right-content {
+    width: 40%;
+  }
+
+  .right-content .name-title h2 {
+    font-size: 2.5rem;
+  }
+
+  .right-content .name-title p {
+    font-size: 2.4rem;
+  }
+
+  .right-content .name-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right-content .myEmail {
+    font-size: 1.6rem;
+  }
+
+  .right-content .links {
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 1.6rem;
+  }
+}
+
+/* Larger font size for desktop screens */
+@media (min-width: 1024px) {
+  nav {
+    height: 5rem;
+  }
+
+  nav .nav-container {
+    padding: 0 6rem;
+  }
+
+  nav .nav-container .logo {
+    font-size: 2.8rem;
+  }
+
+  nav .nav-container .time-date {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .container {
+    width: 75%;
+    flex-direction: row;
+  }
+
+  .left-content {
+    width: 60%;
+  }
+
+  .left-content .title br {
+    display: none;
+  }
+
+  .left-content .goal-lists {
+    font-size: 1.02rem;
+  }
+
+  .right-content {
+    width: 40%;
+  }
+
+  .right-content .name-title {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .right-content .name-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .right-content .name-title p {
+    font-size: 1.7rem;
+  }
+
+  .right-content .myEmail {
+    font-size: 1.3rem;
+  }
+
+  .right-content .links {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1rem;
+  }
 }
